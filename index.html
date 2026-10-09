@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>JEE Main 2025 Syllabus Checklist</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#2f5bea">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap">
+<style>
+:root{--bg:#f5f7fb;--card:#fff;--ink:#14213d;--mute:#5d6b86;--line:#dde3ef;--acc:#2f5bea;--accsoft:#e6ecfe;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1424;--card:#171f35;--ink:#e8edf9;--mute:#93a0bd;--line:#2a3452;--accsoft:#1f2a4d}}
+:root[data-theme="dark"]{--bg:#0e1424;--card:#171f35;--ink:#e8edf9;--mute:#93a0bd;--line:#2a3452;--accsoft:#1f2a4d}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Bricolage Grotesque',system-ui,-apple-system,'Segoe UI',sans-serif;line-height:1.4}
+.wrap{max-width:720px;margin:0 auto;padding:16px 14px 60px}
+header h1{font-size:1.5rem;font-weight:800;margin:4px 0 2px;letter-spacing:-.02em}
+header p{margin:0;color:var(--mute);font-size:.9rem}
+.overall{display:flex;align-items:center;gap:10px;margin:12px 0 14px}
+.bar{flex:1;height:8px;border-radius:99px;background:var(--line);overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:var(--acc);border-radius:99px;transition:width .25s}
+.overall b{font-size:.9rem;min-width:110px;text-align:right}
+.tabs{display:grid;grid-template-columns:repeat(4,1fr);gap:5px;position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding:6px 0}
+.tab{font:inherit;border:1.5px solid var(--line);background:var(--card);color:var(--ink);border-radius:12px;padding:8px 2px;cursor:pointer;text-align:center;min-width:0}
+.tab strong{display:block;font-size:.88rem}
+.tab span{font-size:.75rem;color:var(--mute)}
+.tab[aria-selected="true"]{border-color:var(--acc);background:var(--accsoft)}
+.tab[aria-selected="true"] span{color:var(--ink)}
+.tab:focus-visible,.chead:focus-visible,.row:focus-within{outline:2px solid var(--acc);outline-offset:2px}
+.note{background:var(--accsoft);border-radius:10px;padding:10px 12px;font-size:.85rem;margin:6px 0 2px}
+.group{margin:18px 2px 6px;font-weight:600;font-size:.95rem;color:var(--acc)}
+.chap{background:var(--card);border:1px solid var(--line);border-radius:12px;margin:8px 0;overflow:hidden}
+.chap.done{border-color:var(--acc)}
+.top{display:flex;align-items:center}
+.chead{flex:1;display:flex;align-items:center;gap:10px;font:inherit;color:inherit;background:none;border:0;padding:12px 6px 12px 12px;text-align:left;cursor:pointer;min-width:0}
+.chev{width:10px;height:10px;border-right:2px solid var(--mute);border-bottom:2px solid var(--mute);transform:rotate(-45deg);transition:transform .2s;flex:none;margin-right:2px}
+.open .chev{transform:rotate(45deg)}
+.cname{flex:1;font-weight:600;font-size:.97rem;min-width:0}
+.cnt{font-size:.8rem;color:var(--mute);white-space:nowrap}
+.all{padding:0 12px 0 4px;display:flex;align-items:center;height:44px;cursor:pointer}
+.cb{appearance:none;-webkit-appearance:none;width:22px;height:22px;border:2px solid var(--mute);border-radius:6px;margin:0;display:grid;place-content:center;cursor:pointer;background:transparent;flex:none}
+.cb:checked{background:var(--acc);border-color:var(--acc)}
+.cb:checked::after{content:"";width:6px;height:11px;border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(45deg) translate(-1px,-1px)}
+.cb:indeterminate{border-color:var(--acc)}
+.cb:indeterminate::after{content:"";width:10px;height:2.5px;background:var(--acc)}
+.cb:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+.mini{height:3px;background:var(--line)}
+.mini i{display:block;height:100%;width:0;background:var(--acc);transition:width .25s}
+.topics{display:none;border-top:1px solid var(--line);padding:4px 0}
+.open .topics{display:block}
+.row{display:flex;align-items:flex-start;gap:12px;padding:10px 14px;cursor:pointer;font-size:.93rem}
+.row span{flex:1}
+.row.on span{color:var(--mute);text-decoration:line-through;text-decoration-color:var(--line)}
+.foot{margin-top:22px;display:flex;gap:10px;justify-content:space-between;flex-wrap:wrap;color:var(--mute);font-size:.8rem}
+.foot button{font:inherit;font-size:.85rem;background:none;border:1px solid var(--line);color:var(--ink);border-radius:8px;padding:6px 12px;cursor:pointer}
+.add{display:flex;gap:8px;padding:8px 14px 12px}
+.add input{flex:1;min-width:0;font:inherit;font-size:1rem;color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:8px;padding:9px 10px}
+.add input:focus-visible{outline:2px solid var(--acc);outline-offset:1px}
+.add button{font:inherit;font-size:.88rem;font-weight:600;color:#fff;background:var(--acc);border:0;border-radius:8px;padding:0 14px;cursor:pointer;white-space:nowrap}
+#addch{padding:0;margin-top:14px}
+.del{font:inherit;background:none;border:0;color:var(--mute);cursor:pointer;padding:0 4px;font-size:.9rem;line-height:1}
+.delch{margin:0 14px 12px;font:inherit;font-size:.8rem;background:none;border:1px solid var(--line);color:var(--mute);border-radius:8px;padding:5px 10px;cursor:pointer}
+.empty{padding:10px 14px;font-size:.88rem;color:var(--mute)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>JEE Main 2025 syllabus</h1>
+  <p>Tap a chapter to see its topics. Tick each one as you finish it, or add your own.</p>
+</header>
+<div class="overall"><div class="bar"><i id="obar"></i></div><b id="otxt"></b></div>
+<div class="tabs" role="tablist" id="tabs"></div>
+<div id="note"></div>
+<div id="list"></div>
+<div class="foot"><span>Progress saves in this browser.</span><button id="reset">Reset current tab</button></div>
+</div>
+
+<script>
+const D={
+m:{name:"Maths",acc:"#2f5bea",ch:[
+["Sets, Relations and Functions","Sets and their representation (roster, set-builder)|Types of sets: empty, finite, infinite, subsets|Union and intersection|Complement and difference of sets|Algebraic properties: De Morgan's and distributive laws|Venn diagrams and n(A∪B) problems|Power set|Cartesian product|Relations and their types: reflexive, symmetric, transitive|Equivalence relations and classes|Functions: domain, codomain, range|One-one (injective) functions|Onto (surjective) and into functions|Bijective functions and inverse|Composition of functions"],
+["Complex Numbers and Quadratic Equations","Complex numbers as ordered pairs of reals|Form a + ib and powers of i|Representation in a plane, Argand diagram|Equality, addition, multiplication, division|Conjugate and its properties|Modulus and its properties|Argument (amplitude) and principal value|Polar form|Triangle inequality|Quadratic equations in real numbers and discriminant|Quadratic equations in complex numbers|Relations between roots and coefficients|Nature of roots|Forming quadratic equations with given roots"],
+["Matrices and Determinants","Matrices and notation|Types: row, column, square, diagonal, scalar, identity, triangular|Symmetric and skew-symmetric matrices|Equality, addition and scalar multiplication|Matrix multiplication and its properties|Transpose and its properties|Determinants of order two|Determinants of order three|Minors and cofactors|Properties of determinants|Area of triangle using determinants|Adjoint of a square matrix|Inverse of a matrix|Singular and non-singular matrices|Test of consistency of linear equations|Solving 2 or 3 variable systems using matrices"],
+["Permutations and Combinations","Fundamental principle: multiplication and addition rules|Factorial notation|Permutations: meaning of P(n, r)|Permutations with repetition|Permutations of identical objects|Circular permutations|Combinations: meaning of C(n, r)|Properties of C(n, r)|Selections with restrictions|Division into groups|Simple applications (words, committees, geometry)"],
+["Binomial Theorem and its Simple Applications","Binomial theorem for positive integral index|Pascal's triangle|General term|Middle term(s)|Properties of binomial coefficients|Term independent of x|Greatest term and greatest coefficient|Simple applications: divisibility, remainders, approximations"],
+["Sequence and Series","Arithmetic progression: nth term|Sum of n terms of an AP|Properties of AP|Geometric progression: nth term|Sum of n terms and infinite GP|Properties of GP|Insertion of arithmetic means between two numbers|Insertion of geometric means between two numbers|Relation between A.M. and G.M.|Sums of Σn, Σn², Σn³"],
+["Limit, Continuity and Differentiability","Real-valued functions: domain and range|Algebra of functions|Polynomial and rational functions|Trigonometric functions|Logarithmic and exponential functions|Inverse functions|Graphs of simple functions|Limits: LHL, RHL, existence|Algebra of limits and standard limits|Evaluating limits (factorising, rationalising)|Continuity at a point and on an interval|Types of discontinuity|Differentiability and its link with continuity|Derivative from first principles|Differentiating sum and difference|Product and quotient rules|Differentiating trigonometric functions|Differentiating inverse trigonometric functions|Differentiating logarithmic and exponential functions|Composite functions (chain rule)|Implicit differentiation|Derivatives of order up to two|Rate of change of quantities|Tangent and normal|Monotonic: increasing and decreasing functions|Maxima and minima: first derivative test|Maxima and minima: second derivative test|Optimisation problems"],
+["Integral Calculus","Integral as an anti-derivative|Fundamental integrals: algebraic|Fundamental integrals: trigonometric|Fundamental integrals: exponential and logarithmic|Integration by substitution|Integration by parts|Integration by partial fractions|Integration using trigonometric identities|∫dx/(x²+a²)|∫dx/√(x²±a²)|∫dx/(a²−x²)|∫dx/√(a²−x²)|∫dx/(ax²+bx+c)|∫dx/√(ax²+bx+c)|∫(px+q)dx/(ax²+bx+c)|∫(px+q)dx/√(ax²+bx+c)|∫√(a²±x²)dx and ∫√(x²−a²)dx|Fundamental theorem of calculus|Properties of definite integrals|Evaluation of definite integrals|Area bounded by a curve and axis|Area between two simple curves"],
+["Differential Equations","Ordinary differential equations: definition|Order of a differential equation|Degree of a differential equation|Forming a DE from a family of curves|Separation of variables|Homogeneous differential equations|Linear equations dy/dx + p(x)y = q(x)|Integrating factor"],
+["Co-ordinate Geometry","Cartesian coordinates in a plane|Distance formula|Section formula (internal and external)|Locus and its equation|Slope of a line|Parallel and perpendicular lines|Intercepts on the coordinate axes|Slope-intercept and point-slope forms|Two-point and intercept forms|Normal form of a line|Intersection of lines|Angle between two lines|Concurrence of three lines|Distance of a point from a line|Centroid of a triangle|Orthocentre of a triangle|Circumcentre of a triangle|Circle: standard form|Circle: general form, centre and radius|Circle with given diameter endpoints|Line and circle intersection|Parabola in standard form|Ellipse in standard form|Hyperbola in standard form|Eccentricity, foci, directrix, latus rectum"],
+["Three Dimensional Geometry","Coordinates of a point in space|Distance between two points|Section formula|Direction ratios|Direction cosines|Angle between two intersecting lines|Equation of a line (vector and Cartesian)|Skew lines|Shortest distance between skew lines|Equation of the shortest distance line"],
+["Vector Algebra","Vectors and scalars|Types of vectors|Addition and subtraction of vectors|Multiplication by a scalar|Components in two dimensions|Components in three dimensions|Position vector and section formula|Scalar (dot) product|Vector (cross) product|Applications: projection, angle, area"],
+["Statistics and Probability","Measures of dispersion|Mean of grouped and ungrouped data|Median|Mode|Range and mean deviation|Variance|Standard deviation|Sample space and probability of an event|Addition theorem|Multiplication theorem and independent events|Conditional probability|Bayes' theorem|Random variable and probability distribution|Mean and variance of a distribution"],
+["Trigonometry","Trigonometric ratios and identities|Trigonometric functions: graphs, domain, range|Compound and multiple angle formulae|Transformation formulae|Inverse trigonometric functions|Properties of inverse trigonometric functions"]]},
+p:{name:"Physics",acc:"#0a8f8f",ch:[
+["Units and Measurements","Units of measurement|System of units and SI units|Fundamental and derived units|Least count|Significant figures|Errors: absolute, relative, percentage|Combination of errors|Dimensions of physical quantities|Dimensional analysis: checking equations|Dimensional analysis: converting units and deriving relations"],
+["Kinematics","Frame of reference|Motion in a straight line|Distance and displacement|Speed and velocity|Uniform and non-uniform motion|Average speed and instantaneous velocity|Acceleration|Equations of uniformly accelerated motion|Position-time graph|Velocity-time graph|Relative velocity|Motion in a plane|Projectile motion: time, height, range|Uniform circular motion"],
+["Laws of Motion","Force and inertia|Newton's first law|Momentum|Newton's second law|Impulse|Newton's third law|Conservation of linear momentum and applications|Equilibrium of concurrent forces|Free body diagrams|Static friction|Kinetic friction|Laws of friction and angle of friction|Rolling friction|Dynamics of uniform circular motion|Centripetal force and applications|Vehicle on a level circular road|Vehicle on a banked road"],
+["Work, Energy and Power","Work done by a constant force|Work done by a variable force|Kinetic energy|Potential energy|Work-energy theorem|Power|Potential energy of a spring|Conservation of mechanical energy|Conservative forces|Non-conservative forces|Motion in a vertical circle|Elastic collisions in one dimension|Inelastic collisions in one dimension|Collisions in two dimensions"],
+["Rotational Motion","Centre of mass of a two-particle system|Centre of mass of a rigid body|Angular displacement, velocity and acceleration|Moment of a force (torque)|Angular momentum|Conservation of angular momentum and applications|Moment of inertia|Radius of gyration|Moments of inertia of simple geometric objects|Parallel axes theorem|Perpendicular axes theorem|Equilibrium of rigid bodies|Rigid body rotation and equations of rotational motion|Comparison of linear and rotational motion"],
+["Gravitation","Universal law of gravitation|Acceleration due to gravity|Variation of g with altitude|Variation of g with depth|Kepler's laws of planetary motion|Gravitational potential energy|Gravitational potential|Escape velocity|Motion of a satellite|Orbital velocity|Time period of a satellite|Energy of a satellite"],
+["Properties of Solids and Liquids","Elastic behaviour|Stress-strain relationship|Hooke's law|Young's modulus|Bulk modulus|Modulus of rigidity|Pressure due to a fluid column|Pascal's law and applications|Effect of gravity on fluid pressure|Viscosity|Stokes' law|Terminal velocity|Streamline and turbulent flow|Critical velocity|Bernoulli's principle and applications|Surface energy and surface tension|Angle of contact|Excess pressure across a curved surface|Drops and bubbles|Capillary rise|Heat and temperature|Thermal expansion|Specific heat capacity|Calorimetry|Change of state and latent heat|Heat transfer: conduction|Heat transfer: convection|Heat transfer: radiation"],
+["Thermodynamics","Thermal equilibrium|Concept of temperature|Zeroth law|Heat, work and internal energy|First law of thermodynamics|Isothermal process|Adiabatic process|Second law of thermodynamics|Reversible and irreversible processes"],
+["Kinetic Theory of Gases","Equation of state of a perfect gas|Work done on compressing a gas|Assumptions of kinetic theory|Concept of pressure|Kinetic interpretation of temperature|RMS speed of gas molecules|Degrees of freedom|Law of equipartition of energy|Specific heat capacities of gases|Mean free path|Avogadro's number"],
+["Oscillations and Waves","Periodic motion: time period and frequency|Displacement as a function of time|Periodic functions|Simple harmonic motion and its equation|Phase|Oscillations of a spring: restoring force and force constant|Energy in SHM|Simple pendulum and its time period|Wave motion|Longitudinal and transverse waves|Speed of a travelling wave|Displacement relation for a progressive wave|Principle of superposition|Reflection of waves|Standing waves in strings|Standing waves in organ pipes|Fundamental mode and harmonics|Beats"],
+["Electrostatics","Conservation of charge|Coulomb's law|Forces between multiple charges (superposition)|Continuous charge distribution|Electric field due to a point charge|Electric field lines|Electric dipole|Field due to a dipole|Torque on a dipole in a uniform field|Electric flux|Gauss's law|Field due to infinite straight wire|Field due to infinite plane sheet|Field due to thin spherical shell|Potential due to a point charge|Potential due to a dipole and system of charges|Potential difference|Equipotential surfaces|Potential energy of two point charges|Potential energy of a dipole in a field|Conductors and insulators|Dielectrics and electric polarization|Capacitors and capacitance|Series and parallel combination of capacitors|Parallel plate capacitor with and without dielectric|Energy stored in a capacitor"],
+["Current Electricity","Electric current and drift velocity|Mobility|Ohm's law|Electrical resistance|I-V characteristics: ohmic and non-ohmic|Electrical energy and power|Resistivity and conductivity|Series and parallel resistors|Temperature dependence of resistance|Internal resistance of a cell|Potential difference and emf|Cells in series and parallel|Kirchhoff's laws and applications|Wheatstone bridge|Metre bridge"],
+["Magnetic Effects of Current and Magnetism","Biot-Savart law|Field of a current-carrying circular loop|Ampere's law|Field of an infinitely long straight wire|Field of a solenoid|Force on a moving charge in magnetic and electric fields|Force on a current-carrying conductor|Force between parallel currents and definition of ampere|Torque on a current loop|Moving coil galvanometer and sensitivity|Conversion to ammeter and voltmeter|Current loop as a magnetic dipole|Bar magnet as an equivalent solenoid|Magnetic field lines|Field of a bar magnet: axial and equatorial|Torque on a magnetic dipole|Para-, dia- and ferromagnetic substances|Effect of temperature on magnetic properties"],
+["Electromagnetic Induction and Alternating Currents","Faraday's law|Induced emf and current|Lenz's law|Eddy currents|Self inductance|Mutual inductance|Alternating currents|Peak and RMS values|Reactance and impedance|LCR series circuit|Resonance|Power in AC circuits and power factor|Wattless current|AC generator|Transformer"],
+["Electromagnetic Waves","Displacement current|Electromagnetic waves and their characteristics|Transverse nature of EM waves|Radio waves|Microwaves|Infrared|Visible light|Ultraviolet|X-rays|Gamma rays|Applications of EM waves"],
+["Optics","Reflection of light|Spherical mirrors|Mirror formula|Refraction at plane surfaces|Refraction at spherical surfaces|Thin lens formula|Lens maker formula|Total internal reflection and applications|Magnification|Power of a lens|Combination of thin lenses in contact|Refraction through a prism|Microscope|Astronomical telescope (reflecting and refracting)|Magnifying powers|Wavefront and Huygens' principle|Laws of reflection and refraction using Huygens' principle|Young's double slit experiment and fringe width|Coherent sources and sustained interference|Diffraction due to a single slit|Width of central maximum|Polarization and plane-polarized light|Brewster's law|Uses of Polaroids"],
+["Dual Nature of Matter and Radiation","Dual nature of radiation|Photoelectric effect|Hertz and Lenard's observations|Einstein's photoelectric equation|Particle nature of light|Matter waves: wave nature of particles|de Broglie relation"],
+["Atoms and Nuclei","Alpha-particle scattering experiment|Rutherford's model|Bohr model|Energy levels|Hydrogen spectrum|Composition and size of nucleus|Atomic masses|Mass-energy relation|Mass defect|Binding energy per nucleon and its variation|Nuclear fission|Nuclear fusion"],
+["Electronic Devices","Semiconductors|p-n junction diode|Diode I-V characteristics: forward and reverse bias|Diode as a rectifier|LED and its I-V characteristics|Photodiode|Solar cell|Zener diode|Zener diode as voltage regulator|Logic gates: OR, AND, NOT|Logic gates: NAND and NOR"],
+["Experimental Skills","Vernier calipers: internal and external diameter, depth|Screw gauge: thickness and diameter of sheet or wire|Simple pendulum: energy dissipation graph|Metre scale: mass by principle of moments|Young's modulus of a metallic wire|Surface tension by capillary rise and effect of detergents|Viscosity by terminal velocity of a sphere|Speed of sound using resonance tube|Specific heat of solid and liquid by method of mixtures|Resistivity of a wire using metre bridge|Resistance of a wire using Ohm's law|Galvanometer resistance and figure of merit (half deflection)|Focal length of convex mirror, concave mirror, convex lens (parallax)|Angle of deviation vs angle of incidence for a prism|Refractive index of glass slab using travelling microscope|Characteristic curves of p-n junction diode|Characteristic curves of Zener diode and breakdown voltage|Identifying diode, LED, resistor, capacitor"]]},
+c:{name:"Chemistry",acc:"#c2308a",ch:[
+["Some Basic Concepts in Chemistry","Matter and its nature|Dalton's atomic theory|Atom, molecule, element and compound|Laws of chemical combination|Atomic masses|Molecular masses|Mole concept|Molar mass|Percentage composition|Empirical formula|Molecular formula|Chemical equations|Stoichiometry","Physical Chemistry"],
+["Atomic Structure","Nature of electromagnetic radiation|Photoelectric effect|Spectrum of the hydrogen atom|Bohr model: postulates|Energy of electron and radii of orbits|Limitations of Bohr's model|Dual nature of matter and de Broglie relationship|Heisenberg uncertainty principle|Elementary ideas of quantum mechanics|Quantum mechanical model and its features|Atomic orbitals as one-electron wave functions|Variation of ψ and ψ² with r for 1s and 2s|Quantum numbers: principal, angular momentum, magnetic|Shapes of s and p orbitals|Shapes of d orbitals|Electron spin and spin quantum number|Aufbau principle|Pauli's exclusion principle|Hund's rule|Electronic configuration of elements|Stability of half-filled and completely filled orbitals"],
+["Chemical Bonding and Molecular Structure","Kossel-Lewis approach|Ionic and covalent bonds|Formation of ionic bonds and factors affecting it|Calculation of lattice enthalpy|Electronegativity|Fajan's rule|Dipole moment|VSEPR theory|Shapes of simple molecules|Valence bond theory and its features|Hybridization involving s, p and d orbitals|Resonance|Molecular orbital theory and LCAOs|Bonding and antibonding molecular orbitals|Sigma and pi bonds|MO configurations of homonuclear diatomic molecules|Bond order, bond length and bond energy|Elementary idea of metallic bonding|Hydrogen bonding and its applications"],
+["Chemical Thermodynamics","System and surroundings|Extensive and intensive properties|State functions|Entropy|Types of processes|First law: work, heat, internal energy|Enthalpy|Heat capacity and molar heat capacity|Hess's law of constant heat summation|Enthalpies of bond dissociation and combustion|Enthalpies of formation and atomization|Enthalpies of sublimation and phase transition|Enthalpies of hydration, ionization and solution|Second law and spontaneity|ΔS of universe and ΔG of system as criteria|ΔG° and equilibrium constant"],
+["Solutions","Molality and molarity|Mole fraction|Percentage by volume and by mass|Vapour pressure of solutions|Raoult's law|Ideal and non-ideal solutions|Vapour pressure-composition plots|Relative lowering of vapour pressure|Depression of freezing point|Elevation of boiling point|Osmotic pressure|Determination of molecular mass using colligative properties|Abnormal molar mass|van't Hoff factor and its significance"],
+["Equilibrium","Dynamic equilibrium|Solid-liquid, liquid-gas, gas-gas and solid-gas equilibria|Henry's law|Characteristics of physical equilibria|Law of chemical equilibrium|Equilibrium constants Kp and Kc|Significance of ΔG and ΔG°|Effect of concentration, pressure, temperature|Effect of catalyst|Le Chatelier's principle|Weak and strong electrolytes|Arrhenius, Brønsted-Lowry and Lewis acids and bases|Acid-base equilibria and ionization constants|Multistage ionization|Ionization of water and pH scale|Common ion effect|Hydrolysis of salts and their pH|Solubility of sparingly soluble salts and solubility product|Buffer solutions"],
+["Redox Reactions and Electrochemistry","Electronic concepts of oxidation and reduction|Oxidation number and rules|Balancing redox reactions|Electrolytic and metallic conduction|Conductance in electrolytic solutions|Molar conductivity and its variation with concentration|Kohlrausch's law and applications|Electrolytic and galvanic cells|Types of electrodes|Standard electrode potential|Half-cell and cell reactions|emf of a galvanic cell and its measurement|Nernst equation and applications|Cell potential and Gibbs energy change|Dry cell and lead accumulator|Fuel cells"],
+["Chemical Kinetics","Rate of a chemical reaction|Factors: concentration, temperature, pressure, catalyst|Elementary and complex reactions|Order and molecularity|Rate law, rate constant and units|Zero-order reactions: differential and integral forms|First-order reactions: differential and integral forms|Half-lives of zero and first-order reactions|Effect of temperature and Arrhenius theory|Activation energy and its calculation|Collision theory of bimolecular gaseous reactions"],
+["Classification of Elements and Periodicity","Modern periodic law and present periodic table|s, p, d and f block elements|Trend in atomic and ionic radii|Trend in ionization enthalpy|Trend in electron gain enthalpy|Valence|Oxidation states|Chemical reactivity","Inorganic Chemistry"],
+["p-Block Elements","General introduction|Electronic configuration|Trends in physical properties|Trends in chemical properties|Unique behaviour of first element in each group|Group 13 elements|Group 14 elements|Group 15 elements|Group 16 elements|Group 17 elements|Group 18 elements"],
+["d- and f-Block Elements","Transition elements: general introduction|Electronic configuration|Occurrence and characteristics|Physical properties|Ionization enthalpy|Oxidation states|Atomic radii|Colour|Catalytic behaviour|Magnetic properties|Complex formation|Interstitial compounds|Alloy formation|K₂Cr₂O₇: preparation, properties, uses|KMnO₄: preparation, properties, uses|Lanthanoids: configuration, oxidation states, contraction|Actinoids: configuration and oxidation states"],
+["Coordination Compounds","Introduction to coordination compounds|Werner's theory|Ligands|Coordination number|Denticity|Chelation|IUPAC nomenclature of mononuclear complexes|Structural isomerism|Stereoisomerism|Valence bond approach|Crystal field theory basics|Colour of complexes|Magnetic properties|Importance in qualitative analysis|Importance in extraction of metals|Importance in biological systems"],
+["Purification and Characterisation of Organic Compounds","Purification: crystallization|Purification: sublimation|Purification: distillation|Purification: differential extraction|Purification: chromatography|Detection of nitrogen|Detection of sulphur|Detection of phosphorus|Detection of halogens|Estimation of carbon and hydrogen|Estimation of nitrogen|Estimation of halogens|Estimation of sulphur and phosphorus|Empirical and molecular formula calculations|Numerical problems in quantitative analysis","Organic Chemistry"],
+["Some Basic Principles of Organic Chemistry","Tetravalency of carbon|Shapes of simple molecules and hybridization|Classification by functional groups|Homologous series|Structural isomerism|Stereoisomerism|Trivial nomenclature|IUPAC nomenclature|Homolytic and heterolytic fission|Free radicals|Carbocations and carbanions|Stability of carbocations and free radicals|Electrophiles and nucleophiles|Inductive effect|Electromeric effect|Resonance|Hyperconjugation|Substitution reactions|Addition reactions|Elimination reactions|Rearrangement reactions"],
+["Hydrocarbons","Classification and isomerism|IUPAC nomenclature|General methods of preparation|Alkanes: properties and reactions|Alkanes: conformations (sawhorse and Newman)|Alkanes: mechanism of halogenation|Alkenes: geometrical isomerism|Alkenes: mechanism of electrophilic addition|Alkenes: addition of hydrogen, halogens, water|Alkenes: hydrogen halides, Markovnikov and peroxide effect|Alkenes: ozonolysis|Alkenes: polymerization|Alkynes: acidic character|Alkynes: addition reactions|Alkynes: polymerization|Aromatic hydrocarbons: nomenclature|Benzene: structure and aromaticity|Mechanism of electrophilic substitution|Halogenation and nitration of benzene|Friedel-Crafts alkylation and acylation|Directive influence of functional groups"],
+["Organic Compounds Containing Halogens","General methods of preparation|Properties and reactions|Nature of the C-X bond|Mechanisms of substitution reactions|Chloroform: uses and effects|Iodoform: uses and effects|Freons: uses and effects|DDT: uses and effects"],
+["Organic Compounds Containing Oxygen","Alcohols: preparation and properties|Alcohols: identifying 1°, 2° and 3° alcohols|Alcohols: mechanism of dehydration|Phenols: acidic nature|Phenols: halogenation, nitration, sulphonation|Reimer-Tiemann reaction|Ethers: structure, preparation, properties|Aldehydes and ketones: nature of carbonyl group|Nucleophilic addition to >C=O|Relative reactivity of aldehydes and ketones|Addition of HCN, NH₃ and its derivatives|Grignard reagent|Oxidation of aldehydes and ketones|Reduction: Wolff-Kishner and Clemmensen|Acidity of α-hydrogen|Aldol condensation|Cannizzaro reaction|Haloform reaction|Tests to distinguish aldehydes and ketones|Carboxylic acids: acidic strength and factors|Carboxylic acids: preparation, properties, uses"],
+["Organic Compounds Containing Nitrogen","General methods of preparation|Properties, reactions and uses|Amines: nomenclature|Amines: classification and structure|Basic character of amines|Identifying 1°, 2° and 3° amines|Diazonium salts and their synthetic importance"],
+["Biomolecules","General introduction and importance|Carbohydrates: classification|Aldoses and ketoses|Glucose and fructose|Sucrose, lactose and maltose|α-Amino acids|Peptide bond and polypeptides|Proteins: primary, secondary, tertiary, quaternary structure|Denaturation of proteins|Enzymes|Vitamins: classification|Vitamins: functions|Nucleic acids: chemical constitution of DNA and RNA|Biological functions of nucleic acids|Hormones (general introduction)"],
+["Principles Related to Practical Chemistry","Detection of nitrogen, sulphur and halogens|Tests for hydroxyl group (alcoholic and phenolic)|Tests for carbonyl group|Tests for carboxyl and amino groups|Preparation of Mohr's salt|Preparation of potash alum|Preparation of acetanilide|Preparation of p-nitroacetanilide|Preparation of aniline yellow|Preparation of iodoform|Titrimetry: acids, bases and indicators|Oxalic acid vs KMnO₄|Mohr's salt vs KMnO₄|Salt analysis cations: Pb²⁺, Cu²⁺, Al³⁺, Fe³⁺, Zn²⁺|Salt analysis cations: Ni²⁺, Ca²⁺, Ba²⁺, Mg²⁺, NH₄⁺|Salt analysis anions: CO₃²⁻, S²⁻, SO₄²⁻|Salt analysis anions: NO₃⁻, NO₂⁻, Cl⁻, Br⁻, I⁻|Enthalpy of solution of CuSO₄|Enthalpy of neutralization of strong acid and base|Preparation of lyophilic and lyophobic sols|Kinetics of iodide ions with hydrogen peroxide"]]},
+x:{name:"Extra",acc:"#d9730d",note:"Concepts outside the official list that often help in JEE Main questions and in solving the syllabus topics faster.",ch:[
+["Algebra and series","Inequalities and modulus|Logarithms and their properties|Common roots of two quadratics|Max and min of quadratic expressions|AM-GM-HM inequalities|Roots of unity|Complex numbers as rotation and locus|Telescoping series and AGP|Multinomial theorem|Inclusion-exclusion principle|Mathematical reasoning: statements and truth tables","Maths"],
+["Calculus and functions","L'Hôpital's rule|Series expansions of eˣ, sin x, ln(1+x)|Rolle's and Lagrange's mean value theorems|Domain, range and periodicity|Greatest integer, fractional part and modulus functions|Definite integral as limit of a sum|Walli's formula|Leibniz rule|Area problems with modulus"],
+["Coordinate and vector extras","Parametric forms of conics|Tangent and normal to conics|Chord of contact and pair of tangents|Family of circles and radical axis|Plane in 3D: equation, distance, angle|Line and plane problems|Scalar triple product|Vector triple product"],
+["Trigonometry and probability extras","Trigonometric equations|Sine and cosine rules, properties of triangles|Heights and distances|Binomial probability distribution|Geometric probability"],
+["Mechanics extras","Calculus basics for physics|Constraint motion and pulleys|River-boat and rain-man problems|Pseudo forces in non-inertial frames|Rolling without slipping|Coefficient of restitution|Moment of inertia of ring, disc, rod, sphere|Gravitational field of a shell","Physics"],
+["Heat and waves extras","Newton's law of cooling|Stefan-Boltzmann and Wien's laws|Heat engines and Carnot cycle|Maxwell speed distribution|Doppler effect|Speed of sound in gases|Resonance and damped oscillations"],
+["Electricity and magnetism extras","Field of ring, disc and finite wire|Potential of a charged shell|RC circuit charging and discharging|Potentiometer|Joule heating|Equivalent resistance by symmetry|Cyclotron and mass spectrometer|Field of a finite straight wire|LC oscillations"],
+["Optics and modern physics extras","Thin film interference|Dispersion and prism combinations|Lens and mirror combinations|Radioactivity: decay law and half-life|X-rays and Moseley's law|Bohr model for hydrogen-like ions|Photoelectric effect graphs|Transistor basics|Communication systems basics"],
+["Physical chemistry extras","Gaseous state: gas laws, Graham's and Dalton's laws|Real gases and van der Waals equation|Solid state: unit cells and packing|Equivalent concept and n-factor|Limiting reagent and percentage yield|Redox titrations|Concentration cells|Pseudo-first-order and parallel reactions|pH of polyprotic acids and mixtures|Surface chemistry: adsorption and colloids|Nuclear chemistry basics","Chemistry"],
+["Inorganic chemistry extras","s-block elements|Hydrogen and its compounds|Metallurgy and isolation of elements|EAN rule and hybridisation of complexes|Spin-only magnetic moment|Colours of ions in salt analysis|Oxides and oxoacids trends|Environmental chemistry"],
+["Organic chemistry extras","Stereochemistry: R/S, E/Z, optical isomerism|SN1, SN2, E1 and E2 mechanisms|Comparing acid and base strengths|Named reactions: Sandmeyer, Gattermann, Hofmann, Wurtz, Kolbe|Named reactions: Rosenmund, Stephen, Etard, Hell-Volhard-Zelinsky|Reagent-based conversions|Rearrangements: pinacol, Beckmann, Hofmann|Aromaticity and anti-aromaticity|Tautomerism|Polymers and chemistry in everyday life|Distinguishing tests for functional groups"]]}
+};
+const KEY="jee-main-2025-checklist-v2",CKEY="jee-main-2025-custom-v1";
+let done=new Set(),cur="m",openCh=new Set(),cust={chapters:{},topics:{},n:0};
+try{const s=localStorage.getItem(KEY);if(s)done=new Set(JSON.parse(s))}catch(e){}
+try{const s=localStorage.getItem(CKEY);if(s)cust=Object.assign(cust,JSON.parse(s))}catch(e){}
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify([...done]));localStorage.setItem(CKEY,JSON.stringify(cust))}catch(e){}};
+const uid=()=>++cust.n;
+const pct=(a,b)=>b?Math.round(a/b*100):0;
+const esc=t=>t.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/"/g,"&quot;");
+function chaps(s){
+  const a=D[s].ch.map((c,i)=>({ref:String(i),name:c[0],group:c[2],topics:c[1].split("|").map((t,j)=>({k:s+":"+i+":"+j,t,c:0}))}));
+  (cust.chapters[s]||[]).forEach(u=>a.push({ref:"u"+u.id,name:u.name,custom:1,topics:[]}));
+  a.forEach(ch=>(cust.topics[s+":"+ch.ref]||[]).forEach(t=>ch.topics.push({k:s+":"+ch.ref+":c"+t.id,t:t.t,c:t.id})));
+  return a;
+}
+const count=ch=>{let d=0;ch.topics.forEach(t=>{if(done.has(t.k))d++});return[d,ch.topics.length]};
+const subj=s=>{let d=0,n=0;chaps(s).forEach(c=>{const x=count(c);d+=x[0];n+=x[1]});return[d,n]};
+
+function render(){
+  document.documentElement.style.setProperty("--acc",D[cur].acc);
+  let td=0,tn=0;
+  document.getElementById("tabs").innerHTML=Object.keys(D).map(s=>{const[d,n]=subj(s);if(s!=="x"){td+=d;tn+=n}
+    return `<button class="tab" role="tab" aria-selected="${s===cur}" data-s="${s}"><strong>${D[s].name}</strong><span>${pct(d,n)}%</span></button>`}).join("");
+  document.getElementById("obar").style.width=pct(td,tn)+"%";
+  document.getElementById("otxt").textContent=td+" / "+tn+" syllabus topics";
+  document.getElementById("note").innerHTML=D[cur].note?`<div class="note">${D[cur].note}</div>`:"";
+  let h="",head=false;
+  chaps(cur).forEach((c,i)=>{
+    if(c.group)h+=`<div class="group">${c.group}</div>`;
+    else if(c.custom&&!head){h+=`<div class="group">Added by you</div>`;head=true}
+    const[d,n]=count(c),isOpen=openCh.has(cur+c.ref);
+    h+=`<div class="chap${isOpen?" open":""}${n&&d===n?" done":""}">
+      <div class="top"><button class="chead" aria-expanded="${isOpen}" data-toggle="${c.ref}"><i class="chev"></i><span class="cname">${esc(c.name)}</span><span class="cnt">${d}/${n}</span></button>
+      <label class="all" title="Mark whole chapter"><input type="checkbox" class="cb" data-all="${i}" aria-label="Mark all topics in ${esc(c.name)}" ${n&&d===n?"checked":""} ${d>0&&d<n?'data-ind="1"':""}></label></div>
+      <div class="mini"><i style="width:${pct(d,n)}%"></i></div>
+      <div class="topics">${c.topics.map(t=>`<label class="row${done.has(t.k)?" on":""}"><input type="checkbox" class="cb" data-k="${t.k}" ${done.has(t.k)?"checked":""}><span>${esc(t.t)}</span>${t.c?`<button type="button" class="del" data-del="${t.k}" aria-label="Remove topic">✕</button>`:""}</label>`).join("")}
+      ${c.custom&&!n?`<div class="empty">No topics yet. Add your first one below.</div>`:""}
+      <form class="add" data-addt="${c.ref}"><input type="text" maxlength="120" placeholder="Add your own topic" aria-label="Add a topic to ${esc(c.name)}"><button type="submit">Add</button></form>
+      ${c.custom?`<button type="button" class="delch" data-delch="${c.ref}">Remove this chapter</button>`:""}</div></div>`;
+  });
+  h+=`<form class="add" id="addch"><input type="text" maxlength="100" placeholder="Add your own chapter" aria-label="Add a chapter to ${D[cur].name}"><button type="submit">Add chapter</button></form>`;
+  const L=document.getElementById("list");L.innerHTML=h;
+  L.querySelectorAll("[data-ind]").forEach(e=>e.indeterminate=true);
+}
+const L=document.getElementById("list");
+document.getElementById("tabs").addEventListener("click",e=>{const b=e.target.closest("[data-s]");if(b){cur=b.dataset.s;render();window.scrollTo({top:0})}});
+L.addEventListener("click",e=>{
+  const t=e.target.closest("[data-toggle]");
+  if(t){const k=cur+t.dataset.toggle;openCh.has(k)?openCh.delete(k):openCh.add(k);render();return}
+  const d=e.target.closest("[data-del]");
+  if(d){e.preventDefault();const k=d.dataset.del,p=k.split(":"),id=+p[2].slice(1),key=p[0]+":"+p[1];
+    cust.topics[key]=(cust.topics[key]||[]).filter(x=>x.id!==id);done.delete(k);save();render();return}
+  const c=e.target.closest("[data-delch]");
+  if(c){const ref=c.dataset.delch;if(!confirm("Remove this chapter and its topics?"))return;
+    cust.chapters[cur]=(cust.chapters[cur]||[]).filter(x=>"u"+x.id!==ref);delete cust.topics[cur+":"+ref];
+    [...done].forEach(k=>{if(k.startsWith(cur+":"+ref+":"))done.delete(k)});save();render()}
+});
+L.addEventListener("change",e=>{
+  const el=e.target;
+  if(el.dataset.k){el.checked?done.add(el.dataset.k):done.delete(el.dataset.k)}
+  else if(el.dataset.all!==undefined){chaps(cur)[el.dataset.all].topics.forEach(t=>{el.checked?done.add(t.k):done.delete(t.k)})}
+  else return;
+  save();render();
+});
+L.addEventListener("submit",e=>{
+  e.preventDefault();
+  const f=e.target,inp=f.querySelector("input"),v=inp.value.trim();
+  if(!v){inp.focus();return}
+  if(f.id==="addch"){
+    const id=uid();(cust.chapters[cur]=cust.chapters[cur]||[]).push({id,name:v});openCh.add(cur+"u"+id);save();render();
+    const nf=L.querySelector(`[data-addt="u${id}"] input`);if(nf)nf.focus();
+  }else{
+    const ref=f.dataset.addt,key=cur+":"+ref;
+    (cust.topics[key]=cust.topics[key]||[]).push({id:uid(),t:v});openCh.add(cur+ref);save();render();
+    const nf=L.querySelector(`[data-addt="${ref}"] input`);if(nf)nf.focus();
+  }
+});
+document.getElementById("reset").addEventListener("click",()=>{
+  if(!confirm("Clear all ticks for "+D[cur].name+"? Topics you added stay."))return;
+  [...done].forEach(k=>{if(k[0]===cur)done.delete(k)});save();render();
+});
+render();
+if("serviceWorker" in navigator){window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}))}
+</script>
+</body>
+</html>
